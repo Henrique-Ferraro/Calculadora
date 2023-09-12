@@ -24,7 +24,7 @@ namespace Calculadora
                 Console.WriteLine("{0} {1} {2} = {3}", operacao.valorA, operacao.operador, operacao.valorB, operacao.resultado);
             }
 
-            Console.WriteLine("Finalizou");
+            //Console.WriteLine("Finalizou");
         }
     }
 }
