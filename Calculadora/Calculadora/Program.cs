@@ -21,9 +21,9 @@ namespace Calculadora
 
             Calculadora calculadora = new Calculadora();
 
-            while (filaOperacoes.Count > 0)
+            while (filaOperacoes.Count > 0)  //Exclusão do sinal de igual
             {
-                Operacoes operacao = filaOperacoes.Dequeue();
+                Operacoes operacao = filaOperacoes.Dequeue();  //Alteração do método peek para dequeue
                 calculadora.calcular(operacao);
                 Console.WriteLine("{0} {1} {2} = {3}", operacao.valorA, operacao.operador, operacao.valorB, operacao.resultado);
 
@@ -31,7 +31,7 @@ namespace Calculadora
                 pilhaOperacoes.Push(operacao);
             }
 
-            Console.WriteLine("Inicio da Pilha:");
+            Console.WriteLine("Inicio da Pilha:"); //Comentário do inicio da fila
 
             // Laço de repetição que percorre toda a pilha com os resultados da operação
             while (pilhaOperacoes.Count > 0)
