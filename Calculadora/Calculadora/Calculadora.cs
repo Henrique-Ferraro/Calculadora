@@ -12,24 +12,24 @@ namespace Calculadora
                 case '+': operacao.resultado = soma(operacao); break;
                 case '-': operacao.resultado = subtracao(operacao); break;
                 case '*': operacao.resultado = multiplicacao(operacao); break;
-                case '/': operacao.resultado = divisao(operacao); break; // Implementação da funcionalidade de divisão
+                case '/': operacao.resultado = divisao(operacao); break;
                 default: operacao.resultado = 0; break;
             }
             return operacao;
         }
-        public long soma(Operacoes operacao)  //Alteração do tipo de dado de int para long
+        public long soma(Operacoes operacao)
         {
             return operacao.valorA + operacao.valorB;
         }
-        public long subtracao(Operacoes operacao)  //Alteração do tipo de dado de int para long
+        public long subtracao(Operacoes operacao)
         {
             return operacao.valorA - operacao.valorB;
         }
-        public long multiplicacao(Operacoes operacao)  //Alteração do tipo de dado de int para long
+        public long multiplicacao(Operacoes operacao)
         {
             return operacao.valorA * operacao.valorB;
         }
-        public decimal divisao(Operacoes operacao)   // Implementação da funcionalidade de divisão
+        public decimal divisao(Operacoes operacao)
         {
             return operacao.valorA / operacao.valorB;
         }

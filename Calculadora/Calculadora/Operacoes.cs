@@ -5,7 +5,7 @@ namespace Calculadora
     {
         public long valorA {get;set;}
         public char operador { get; set; }
-        public int valorB { get; set; }
+        public long valorB { get; set; }
         public decimal resultado { get; set; }
 
     }
