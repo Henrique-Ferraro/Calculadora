@@ -8,6 +8,7 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {
+            //Criando empilhamento da fila de operações
             Queue<Operacoes> filaOperacoes = new Queue<Operacoes>();
             filaOperacoes.Enqueue(new Operacoes { valorA = 2, valorB = 3, operador = '+' });
             filaOperacoes.Enqueue(new Operacoes { valorA = 14, valorB = 8, operador = '-' });
